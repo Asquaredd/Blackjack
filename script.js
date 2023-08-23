@@ -70,7 +70,7 @@ function renderHand(hand, elementId, reveal) {
   
       // If it's the dealer's hand and the reveal flag is false, show the back of the first card
       if (elementId === 'dealer-cards' && i === 0 && !reveal) {
-        cardElement.src = 'cards/back.png'; // Path to a card back image
+        cardElement.src = 'cards/BACK.png'; // Path to a card back image
       } else {
         let value = hand[i].value === 'Jack' ? 'J' : hand[i].value === 'Queen' ? 'Q' : hand[i].value === 'King' ? 'K' : hand[i].value === 'Ace' ? 'A' : hand[i].value;
         let suit = hand[i].suit.charAt(0).toUpperCase();
