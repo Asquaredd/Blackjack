@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header id="nav-wrapper">
+    <nav id="nav">
+      <div class="nav left">
+        <span class="gradient skew"><h1 class="logo un-skew"><img src="./logo.png" class="logo-img"><a href="#home"></a></h1></span>
+        <button id="menu" class="btn-nav"><span class="fas fa-bars"></span></button>
+      </div>
+      <div class="nav right">
+        <a href="#home" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Home</span></span></a>
+        <a href="#blackj" class="nav-link"><span class="nav-link-span"><span class="u-nav">Blackjack</span></span></a>
+        <a href="#about" class="nav-link"><span class="nav-link-span"><span class="u-nav">Routlette</span></span></a>
+      </div>
+    </nav>
+  </header>
+<body>
+    <div id="game-container">
+        <div id="dealer-area">
+            <h2>Dealer's Hand</h2>
+            <div id="dealer-cards"></div>
+        </div>
+        
+        <div id="player-area">
+            <h2>Your Hand</h2>
+            <div id="player-cards"></div>
+        </div>
+        <div id="controls">
+            <button id="deal" class="button-85" role="button">Deal</button>
+            <button id="hit" class="button-85" role="button">Hit</button>
+            <button id="stand" class="button-85" role="button">Stand</button>
+        </div>
+        <div id="status"></div>
+        <div id="counter">
+            Wins: <span id="wins">0</span>
+            Losses: <span id="losses">0</span>
+            Ties: <span id="ties">0</span>
+        </div>
+          
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
